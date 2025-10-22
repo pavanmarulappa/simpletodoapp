@@ -33,8 +33,8 @@ pipeline {
             steps {
                 // Copy build files to deployment directory
                 sh '''
-                sudo rm -rf ${DEPLOY_DIR}/*
-                sudo cp -r frontend/dist/* ${DEPLOY_DIR}/
+                sudo /usr/bin/rm -rf ${DEPLOY_DIR}/*
+                sudo /usr/bin/cp -r frontend/dist/* ${DEPLOY_DIR}/
                 sudo systemctl restart nginx
                 sudo systemctl restart simpletodo.service || true
                 '''
