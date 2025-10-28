@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>✅ Simple To Do App </h1>
+      <h1>✅ Simple To Do Application </h1>
       <div className="input-group">
         <input
           type="text"
